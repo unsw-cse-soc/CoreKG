@@ -1,25 +1,17 @@
-----CoreDB: a Data Lake Service-------------
+----CoreKG: a Knowledge Lake Service-------------
 
-CoreDB is an open source complete Database Service that powers multiple relational and NoSQL (key/value, document and graph stores) databases-as-a-service for developing Web data applications. 
-CoreDB enables analysts to build a data lake, create relational and/or NoSQL datasets within the data lake and CRUD (Create, Read, Update and Delete) and query entities in those datasets. 
-CoreDB exposes the power of Elasticsearch, a search engine based on Apache Lucene (https://lucene.apache.org/), to support a powerful index and full-text search.
-CoreDB has a built-in design to enable top database security threats (Authentication, Access Control and Data Encryption) along with Tracing and Provenance support.
- CoreDB weave all these services together at the application layer and offers a single REST API to organize, index and query the data and metadata in a data lake.
+With Data Science continuing to emerge as a powerful differentiator across industries, organisations are now focused on transforming their private and open data into actionable insights. This task is challenging as in today's knowledge-, service-, and cloud-based economy, businesses accumulate massive amounts of data from a variety of sources.
+In this context, organizing vast amount of data gathered from various private/open data islands, i.e. Data Lake, will facilitate dealing with a collection of independently-managed datasets (from relational to NoSQL), diversity of formats and non-standard data models.
+The rationale behind a Data Lake is to store raw data and let the data analyst decide how to cook/curate them later. In this paper, we present the notion of Knowledge Lake, i.e. a contextualized Data Lake. The Knowledge Lake will provide the foundation for big data analytics by automatically curating the raw data in the Data Lake and to prepare them for deriving insights. We present CoreKG -an open source Data and Knowledge Lake service- which offers researchers and developers a single REST API to organize, curate, index and query their data and metadata over time. CoreKG manages multiple database technologies (from Relational to NoSQL) and offers a built-in design for data curation, security and provenance.
 
+CoreKG Source: https://github.com/unsw-cse-soc/CoreKG
 
-CoreDB Source: 
-https://github.com/unsw-cse-soc/CoreDB
+Try CoreKG Service: http://129.94.175.90:8082/
 
-Try CoreDB Service:
-http://129.94.175.90:8082/
+Learn More: https://youtu.be/bDkJJ0wSXl4
 
-Learn More: 
-https://youtu.be/uCOn67IdrPU
+Notice: We encourage researchers/developers to cite our paper if you have used our APIs, libraries, tools or datasets.
 
-Notice:
-We encourage researchers/developers to cite our paper if you have used our APIs, libraries, tools or datasets.
-
-* Amin Beheshti, Boualem Benatallah, Reza Nouri, Van Munin Chhieng, HuangTao Xiong, Xu Zhao: CoreDB: a Data Lake Service. CIKM 2017.
 
 ----License-----------------------
 
@@ -29,8 +21,7 @@ Copyright 2016 UNSW.CSE.SOC Research Group unsw.cse.soc@gmail.com
 
 You may not use these APIs except in compliance with the License. You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 ----Contributors-----------------------
 
@@ -40,13 +31,8 @@ Boualem Benatallah
 
 Reza Nouri
 
-Van Munin Chhieng
+Alireza Tabebordbar
 
-HuangTao Xiong
 
-Xu Zhao
-
-Service Oriented Computing (SOC) Research Group, 
-School of Computer Sience and Engineering, 
-The University of New South Wales, 
-Sydney, Australia. 
+The University of New South Wales, Sydney, Australia.
+Macquarie University, Sydney, Australia
