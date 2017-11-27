@@ -6,7 +6,7 @@ The rationale behind a Data Lake is to store raw data and let the data analyst d
 
 CoreKG Source: https://github.com/unsw-cse-soc/CoreKG
 
-Try CoreKG Service: http://129.94.175.90:8082/
+Try CoreKG Service: http://129.94.175.90:8083/
 
 Learn More: https://youtu.be/bDkJJ0wSXl4
 
