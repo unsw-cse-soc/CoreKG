@@ -34,6 +34,6 @@ Reza Nouri
 Alireza Tabebordbar
 
 
-The University of New South Wales, Sydney, Australia.
-AND
-Macquarie University, Sydney, Australia
+-The University of New South Wales, Sydney, Australia.
+
+-Macquarie University, Sydney, Australia
