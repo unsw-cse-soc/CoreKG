@@ -8,7 +8,7 @@ CoreKG Source: https://github.com/unsw-cse-soc/CoreKG
 
 Try CoreKG Service: http://129.94.175.90:8083/
 
-Learn More: https://youtu.be/bDkJJ0wSXl4
+Learn More: https://youtu.be/0psx0LxBSlc
 
 Notice: We encourage researchers/developers to cite our paper if you have used our APIs, libraries, tools or datasets.
 
