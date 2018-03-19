@@ -27,7 +27,7 @@ class RelationComponent extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card-panel teal lighten-2">Create a relation</div>
                 <p class="caption">
-                    Coredb supports schema-less entities and it is not necessary to define schema for entities. It employs a solution in order to detect type of each attribute of an entity from the JSON object containing the entity. This allows you to manage inheritance straightforward without defining multiple tables and collection for each type
+                    CoreKG supports schema-less entities and it is not necessary to define schema for entities. It employs a solution in order to detect type of each attribute of an entity from the JSON object containing the entity. This allows you to manage inheritance straightforward without defining multiple tables and collection for each type
                 </p>
                 <CreateRelationForm onSubmit={handleCreateRelationSubmit} />
             </div>
@@ -58,7 +58,7 @@ class CreateRelationForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST -d '{"sourceDatabase":"${(isNil(sourceDatabaseNameValue) || isEmpty(sourceDatabaseNameValue)) ? "SOURCE_DATABASE" : sourceDatabaseNameValue}", "sourceDataset":"${(isNil(sourceDatasetNameValue) || isEmpty(sourceDatasetNameValue)) ? "SOURCE_DATASET" : sourceDatasetNameValue}"}' http://CoreDB/api/relations/${(isNil(sourceEntityTypeValue) || isEmpty(sourceEntityTypeValue)) ? '{SOURCE_TYPE}' : sourceEntityTypeValue}/${(isNil(destinationEntityTypeValue) || isEmpty(destinationEntityTypeValue)) ? '{DESTINATION_TYEP}' : destinationEntityTypeValue}`}</pre>
+                        <pre>{`curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST -d '{"sourceDatabase":"${(isNil(sourceDatabaseNameValue) || isEmpty(sourceDatabaseNameValue)) ? "SOURCE_DATABASE" : sourceDatabaseNameValue}", "sourceDataset":"${(isNil(sourceDatasetNameValue) || isEmpty(sourceDatasetNameValue)) ? "SOURCE_DATASET" : sourceDatasetNameValue}"}' http://CoreKG/api/relations/${(isNil(sourceEntityTypeValue) || isEmpty(sourceEntityTypeValue)) ? '{SOURCE_TYPE}' : sourceEntityTypeValue}/${(isNil(destinationEntityTypeValue) || isEmpty(destinationEntityTypeValue)) ? '{DESTINATION_TYEP}' : destinationEntityTypeValue}`}</pre>
                     </div>
                 </div>
             </div>

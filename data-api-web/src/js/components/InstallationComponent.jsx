@@ -70,7 +70,7 @@ class CreateClientForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Content-Type: application/json" -X POST -d '{"name":"${(isNil(clientNameValue) || isEmpty(clientNameValue)) ? 'DataLake_NAME' : clientNameValue}"}' http://CoreDB/api/clients`}</pre>
+                        <pre>{`curl -H "Content-Type: application/json" -X POST -d '{"name":"${(isNil(clientNameValue) || isEmpty(clientNameValue)) ? 'DataLake_NAME' : clientNameValue}"}' http://CoreKG/api/clients`}</pre>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ class CreateUserForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Content-Type: application/json" -X POST -d '{"userName":"${(isNil(userNameValue) || isEmpty(userNameValue)) ? 'USER_NAME' : userNameValue}", "password": "${(isNil(passwordValue) || isEmpty(passwordValue)) ? 'PASSWORD' : passwordValue}", "role":"${(isNil(roleValue) || isEmpty(roleValue)) ? 'ROLE' : roleValue}", "clientName":"${(isNil(clientNameValue) || isEmpty(clientNameValue)) ? 'DataLake_NAME' : clientNameValue}", "clientSecret":"${(isNil(clientSecretValue) || isEmpty(clientSecretValue)) ? 'DataLake_SECRET' : clientSecretValue}"}'http://CoreDB/api/account`}</pre>
+                        <pre>{`curl -H "Content-Type: application/json" -X POST -d '{"userName":"${(isNil(userNameValue) || isEmpty(userNameValue)) ? 'USER_NAME' : userNameValue}", "password": "${(isNil(passwordValue) || isEmpty(passwordValue)) ? 'PASSWORD' : passwordValue}", "role":"${(isNil(roleValue) || isEmpty(roleValue)) ? 'ROLE' : roleValue}", "clientName":"${(isNil(clientNameValue) || isEmpty(clientNameValue)) ? 'DataLake_NAME' : clientNameValue}", "clientSecret":"${(isNil(clientSecretValue) || isEmpty(clientSecretValue)) ? 'DataLake_SECRET' : clientSecretValue}"}'http://CoreKG/api/account`}</pre>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@ class GetTokeForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Content-Type: application/json" -X POST -d '{"userName":"${(isNil(loginUserNameValue) || isEmpty(loginUserNameValue)) ? 'USER_NAME' : loginUserNameValue}", "password": "${(isNil(loginPasswordValue) || isEmpty(loginPasswordValue)) ? 'PASSWORD' : loginPasswordValue}", "grant_type": "PASSWORD","clientName":"${(isNil(loginClientNameValue) || isEmpty(loginClientNameValue)) ? 'YOUR_CLIENT' : loginClientNameValue}", "clientSecret":"${(isNil(loginClientSecretValue) || isEmpty(loginClientSecretValue)) ? 'YOUR_CLIENT_SECRET' : loginClientSecretValue}"}'http://CoreDB/api/oauth`}</pre>
+                        <pre>{`curl -H "Content-Type: application/json" -X POST -d '{"userName":"${(isNil(loginUserNameValue) || isEmpty(loginUserNameValue)) ? 'USER_NAME' : loginUserNameValue}", "password": "${(isNil(loginPasswordValue) || isEmpty(loginPasswordValue)) ? 'PASSWORD' : loginPasswordValue}", "grant_type": "PASSWORD","clientName":"${(isNil(loginClientNameValue) || isEmpty(loginClientNameValue)) ? 'YOUR_CLIENT' : loginClientNameValue}", "clientSecret":"${(isNil(loginClientSecretValue) || isEmpty(loginClientSecretValue)) ? 'YOUR_CLIENT_SECRET' : loginClientSecretValue}"}'http://CoreKG/api/oauth`}</pre>
                     </div>
                 </div>
             </div>

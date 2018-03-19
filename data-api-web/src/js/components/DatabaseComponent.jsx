@@ -58,7 +58,7 @@ class CreateDatabaseForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST -d '{"name":"${(isNil(databaseNameValue) || isEmpty(databaseNameValue)) ? 'Dataset_NAME' : databaseNameValue}", "type": "${(isNil(databaseTypeValue) || isEmpty(databaseTypeValue)) ? 'Database_NAME' : databaseTypeValue}"}' http://CoreDB/api/databases`}</pre>
+                        <pre>{`curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST -d '{"name":"${(isNil(databaseNameValue) || isEmpty(databaseNameValue)) ? 'Dataset_NAME' : databaseNameValue}", "type": "${(isNil(databaseTypeValue) || isEmpty(databaseTypeValue)) ? 'Database_NAME' : databaseTypeValue}"}' http://CoreKG/api/databases`}</pre>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ class DeleteDatabaseForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" -X DELETE http://CoreDB/api/databases/{DATABASE_NAME}`}</pre>
+                        <pre>{`curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" -X DELETE http://CoreKG/api/databases/{DATABASE_NAME}`}</pre>
                     </div>
                 </div>
             </div>

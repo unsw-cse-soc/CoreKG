@@ -29,7 +29,7 @@ class EntityComponent extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card-panel teal lighten-2">Create an entity</div>
                 <p class="caption">
-                    Coredb supports schema-less entities and it is not necessary to define schema for entities. It employs a solution in order to detect type of each attribute of an entity from the JSON object containing the entity. This allows you to manage inheritance straightforward without defining multiple tables and collection for each type
+                    CoreKG supports schema-less entities and it is not necessary to define schema for entities. It employs a solution in order to detect type of each attribute of an entity from the JSON object containing the entity. This allows you to manage inheritance straightforward without defining multiple tables and collection for each type
                 </p>
                 <CreateEntityForm onSubmit={handleCreateEntitySubmit} />
                 {done && <p>Done!</p>}
@@ -80,7 +80,7 @@ class CreateEntityForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST -d '{${join(attributeList, ' ,')}}' http://CoreDB/api/entity/${(isNil(databaseNameValue) || isEmpty(databaseNameValue)) ? '{Database_NAME}' : databaseNameValue}/${(isNil(datasetNameValue) || isEmpty(datasetNameValue)) ? '{Dataset_NAME}' : datasetNameValue}/${(isNil(entityTypeValue) || isEmpty(entityTypeValue)) ? '{Entity_TYPE}' : entityTypeValue}`}</pre>
+                        <pre>{`curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST -d '{${join(attributeList, ' ,')}}' http://CoreKG/api/entity/${(isNil(databaseNameValue) || isEmpty(databaseNameValue)) ? '{Database_NAME}' : databaseNameValue}/${(isNil(datasetNameValue) || isEmpty(datasetNameValue)) ? '{Dataset_NAME}' : datasetNameValue}/${(isNil(entityTypeValue) || isEmpty(entityTypeValue)) ? '{Entity_TYPE}' : entityTypeValue}`}</pre>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@ class DeleteDatabaseForm extends React.Component {
             <div class="col s12 m12 l12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <pre>{`curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" -X DELETE http://CoreDB/api/databases/{DATABASE_NAME}`}</pre>
+                        <pre>{`curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" -X DELETE http://CoreKG/api/databases/{DATABASE_NAME}`}</pre>
                     </div>
                 </div>
             </div>
