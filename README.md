@@ -10,7 +10,9 @@ Try CoreKG Service: http://129.94.175.90:8083/
 
 Learn More: https://youtu.be/0psx0LxBSlc
 
-Notice: We encourage researchers/developers to cite our paper if you have used our APIs, libraries, tools or datasets.
+Notice: We encourage researchers/developers to cite our paper if you have used our APIs, libraries, tools or datasets. 
+
+•	Amin Beheshti, Boualem Benatallah, Reza Nouri, Alireza Tabebordbar: CoreKG: a Knowledge Lake Service. VLDB 2018.
 
 
 ----License-----------------------
